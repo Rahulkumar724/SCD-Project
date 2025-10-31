@@ -1,0 +1,24 @@
+/* public/css/style.css — small, purposeful layer atop Bootstrap 5 */
+
+section { scroll-margin-top: 80px; }
+
+/* Hero gradient */
+.hero { background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%); }
+
+/* Card affordance */
+.card { transition: transform .15s ease, box-shadow .15s ease; }
+.card:hover { transform: translateY(-2px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.08); }
+
+/* Mobile tweaks */
+@media (max-width: 767.98px) {
+  .navbar .nav-link { padding: .75rem 1rem; }
+  .hero .display-5 { font-size: 1.9rem; }
+}
+
+/* Desktop refinements */
+@media (min-width: 992px) {
+  .hero p.lead { max-width: 720px; }
+}
+
+/* Focus visibility */
+:focus-visible { outline: 3px solid rgba(13,110,253,.5); outline-offset: 2px; }
